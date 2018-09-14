@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+      let dictionary=prompt("từ khóa cần dịch");
+      let array1=["table","house","computer"];
+      let array2=["cái bàn","ngôi nhà","máy tính"];
+      let value =false;
+      let value2 = "";
+         for (let i=0;i<array1.length;i++)  {
+             if (dictionary===array1[i]) {
+                 value=true;
+                 value2=array2[i];
+                 break;
+             }
+        }
+      if (value) {
+          alert(value2);
+      }else {
+          alert("tu khoa khong kha dung")
+      }
+
+  </script>
+
+</body>
+</html>
